@@ -1,0 +1,1 @@
+docker run -p 5432:5432 -d -v /Users/rstrandt/Sites/postgresql/data:/postgres/data -e PGDATA=/postgres/data postgres

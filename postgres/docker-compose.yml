@@ -1,0 +1,10 @@
+version: '3'
+services:
+  pg:
+    env_file: .env
+    image: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      # LOCAL_POSTGRES_DATA ex 'Users/localuser/Sites/postgresql/data'
+      - ${LOCAL_POSTGRES_DATA_DIR}:/data/db
